@@ -124,4 +124,8 @@ public class ModelPrincipalSecrets {
     this.mainSecret = principalSecrets.getMainSecret();
     this.secondarySecret = principalSecrets.getSecondarySecret();
   }
+
+  public void update(ModelPrincipalSecrets model) {
+    update(ModelPrincipalSecrets.toPrincipalSecrets(model));
+  }
 }
